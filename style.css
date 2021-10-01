@@ -2,42 +2,138 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    transition: background-color 2s;
 }
+
+/* soluzione 1 */
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: width 3s;
 }
+
+/* soluzione 2 */
+
+.ex-2-square:active{
+width: 100%;
+}
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: border-radius 3s;
 }
+
+/* soluzione 3 */
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: opacity 3s;
 }
+
+/* soluzione 4 */
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: 3s;
 }
+
+/* soluzione 5 */
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+}
+
+/* soluzione 6 */
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* soluzione 7 */
+
+.ex-7-img{
+    transition: filter 2s;
+}
+
+.ex-7-img:hover{
+    filter: sepia(0.5) brightness(0.8);
+}
+
+/* soluzione 8 */
+
+.ex-8-img{
+    transition: filter 2s, border-radius 2s;
+}
+
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: sepia(0.6) brightness(0.8);
+    
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 3s;
 }
+
+/* soluzione 9 */
+
+.ex-9-img:hover{
+    border-radius: 20px;
+    filter: brightness(0.8) sepia(0.6);
+    transform: scale(1.5);
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: rotazione 2s;
 }
+
+/* soluzione 10 */
+
+@keyframes rotazione{
+
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+/* soluzione 11 */
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -67,3 +163,7 @@
     width: 60px;
     height: 20px;
 }
+
+/* soluzione 12 */
+
+/* soluzione 13 */
