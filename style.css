@@ -118,21 +118,33 @@ width: 100%;
 
 .ex-10-icon {
     font-size: 60px;
-    animation: rotazione 2s;
+    animation: rotazione 3s linear infinite;
 }
 
 /* soluzione 10 */
 
 @keyframes rotazione{
-
+    0%{
+        transform: rotate(1turn);   
+    }
 }
-
 
 .ex-11-icon {
     font-size: 60px;
 }
 
 /* soluzione 11 */
+
+.ex-11-icon:hover{
+    animation: semirotazione 2s linear;
+}
+
+@keyframes semirotazione{
+    90%{
+        transform: rotate(0.9turn);
+    }
+}
+
 
 .ex-12-button, .ex-13-button {
     position: relative;
