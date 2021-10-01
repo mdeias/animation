@@ -178,4 +178,43 @@ width: 100%;
 
 /* soluzione 12 */
 
+.ex-12-button:hover .ex-12-top-white{
+    animation: bordo-alto 2s linear;
+}
+
+@keyframes bordo-alto{
+    0%{
+        left: 10%;
+    }
+
+    50%{
+        left: 60%;
+    }   
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: bordo-basso 2s linear;
+}
+
+@keyframes bordo-basso{
+    0%{
+        right: 20%;
+    }
+
+    50%{
+        right: 70%;
+    }
+}
+
 /* soluzione 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: bordo-13-alto 2s linear;
+}
+
+@keyframes bordo-13-alto{
+    0%{
+        left: 10%;
+    }
+
+}
